@@ -27,7 +27,7 @@ const SearchList = ({ shows, searchValue }) => {
     
   }, [searchValue]);
   
-  console.log("setPagesButtons", pagesButtons)
+  // console.log("setPagesButtons", pagesButtons)
   
   // const getShows = () => {
   //   let slicedPositions, positionEnds;
@@ -58,9 +58,9 @@ const SearchList = ({ shows, searchValue }) => {
     setPositionStart(id*maxShowsPerPage);
     positionEnds = positionStart+maxShowsPerPage;
     slicer = sliceItems.slice(positionStart, positionEnds);
-    console.log("START POSITION ====>", positionStart)
-    console.log("ENDS ======> ", positionEnds)
-    console.log("SWITCH SLIDER ====>", slicer)
+    // console.log("START POSITION ====>", positionStart)
+    // console.log("ENDS ======> ", positionEnds)
+    // console.log("SWITCH SLIDER ====>", slicer)
     setShowsSelector(slicer);
 
   }
