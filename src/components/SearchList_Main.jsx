@@ -21,7 +21,7 @@ const SearchList = ({ shows, searchValue }) => {
   const getShows = () => {
     for (let page = 1; page <= pagesAmount; page++) {
       pageSelector.push(shows.slice(position, position+showsPerPage));
-      setUpdateSelector([...pageSelector], shows.slice(position, position+showsPerPage))
+      //setUpdateSelector([...pageSelector], shows.slice(position, position+showsPerPage))
       position = position+showsPerPage;
       pagesButtons.push(page);
     }

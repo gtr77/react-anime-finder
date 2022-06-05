@@ -1,0 +1,102 @@
+.button {
+	display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+	padding: 6px;
+	border: 1px solid #D5D5D5;
+	background-color: gray;
+	font: 700 16px Helvetica, arial;
+  cursor: pointer;
+  margin: 0 2px;
+  
+  &--state {
+    color: #FFF;
+    background-color: #17243b;
+    border-color: #586781;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; 
+
+    &:hover {
+      transform: scale(1.2);
+      background-color: #569E3D;
+      border-color: #4A993E;
+    }
+  }
+}
+.show-card-container {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .show-card {
+    display: flex;
+    flex-direction: column;
+    width: 12.28571%;
+    background: rgb(41, 60, 86);
+    border-radius: 5px;
+    box-shadow: 0 0 8px #d7e7ff;
+    padding: 1%;
+    box-sizing: border-box;
+    margin: 1%;
+    max-height: 600px;
+    overflow: hidden;
+    color: #fff;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.05);
+      background: #82cc6a;
+    }
+    h1 {
+      font-size: 14px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    p {
+      font-size: 11px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}
+
+.paginator {
+  margin: 20px 0;
+}
+.loader {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 10px solid #52b7e5;
+  border-top: 10px solid #17243b;
+  border-left: 10px solid #17243b;
+  border-right: 10px solid #17243b;
+  background-color: #35517b;
+  box-shadow: 0px 0px 10px #16253b;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react'
-import Search from "./components/Search"
-import SideBar from "./components/SideBar"
-import './App.css'
+import Search from "./components/Search/Search"
+import SideBar from "./components/Sidebar/SideBar"
+import './App.scss'
 import { useSelector, useDispatch } from 'react-redux';
 import { bindActionCreators } from "redux";
 import { actionsCreators } from "./state/index";
@@ -12,7 +12,8 @@ function App() {
   const account = useSelector((state) => state.account);
   const dispatch = useDispatch();
 
-  const { depositMoney, withdrawMoney} = bindActionCreators(actionsCreators, dispatch);
+  
+  const { depositMoney, withdrawMoney, updatePosition, restartPosition } = bindActionCreators(actionsCreators, dispatch);
   
   return (
     <div className="App">
